@@ -6,7 +6,6 @@ async function searchDate(events) {
   let birthDate = new Date(input);
   let month = birthDate.getMonth() + 1;
   let day = birthDate.getDate();
-  // let fullYear = birthDate.getFullYear();
   const url = `https://en.wikipedia.org/api/rest_v1/feed/onthisday/events/${month}/${day}`;
 
   try {
